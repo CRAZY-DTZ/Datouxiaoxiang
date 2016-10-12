@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
+            <connections>
+                <outlet property="_bigImageBtn" destination="qgl-9C-bFn" id="QXE-57-2Po"/>
+                <outlet property="_imageBtn" destination="izj-5K-Gpn" id="epv-yL-9Wd"/>
+                <outlet property="_morebtn" destination="Eyi-x8-6pA" id="SXr-2k-Zx3"/>
+                <outlet property="_stateBtn" destination="Hh4-kG-1t1" id="Whu-HJ-gnj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="izj-5K-Gpn">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="ATi-O4-lgp"/>
+                        <constraint firstAttribute="width" constant="250" id="Yr3-U0-i1K"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="PhotoBtn"/>
+                    <connections>
+                        <action selector="clickAvatarBtn:" destination="-1" eventType="touchUpInside" id="G6T-LY-BUE"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hh4-kG-1t1">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="83" id="7dX-Gf-xOw"/>
+                        <constraint firstAttribute="height" constant="83" id="DZd-2C-97S"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="OnlineIcon"/>
+                    <connections>
+                        <action selector="stateAction:" destination="-1" eventType="touchUpInside" id="xwW-mu-Cot"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qgl-9C-bFn">
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="qgl-9C-bFn" secondAttribute="height" multiplier="3750:1235" id="scr-aj-Fl1"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="DzLogo"/>
+                    <connections>
+                        <action selector="clickBigBtn:" destination="-1" eventType="touchUpInside" id="iaE-oa-xd9"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4SG-QG-pKm">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eyi-x8-6pA">
+                            <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34" id="6KW-k8-LLW"/>
+                                <constraint firstAttribute="width" constant="60" id="7P6-sM-Oeo"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="更    多">
+                                <color key="titleColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="moreAction:" destination="-1" eventType="touchUpInside" id="LDA-iA-dIt"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Eyi-x8-6pA" firstAttribute="centerY" secondItem="4SG-QG-pKm" secondAttribute="centerY" id="7MS-qY-sPR"/>
+                        <constraint firstItem="Eyi-x8-6pA" firstAttribute="centerX" secondItem="4SG-QG-pKm" secondAttribute="centerX" id="RCx-Ai-9Of"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="4SG-QG-pKm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="69A-tL-ZQW"/>
+                <constraint firstItem="qgl-9C-bFn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="70g-yX-o1Y"/>
+                <constraint firstAttribute="bottom" secondItem="4SG-QG-pKm" secondAttribute="bottom" id="CwZ-hZ-wMl"/>
+                <constraint firstAttribute="trailing" secondItem="4SG-QG-pKm" secondAttribute="trailing" id="HPD-GE-ByS"/>
+                <constraint firstItem="izj-5K-Gpn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="VWN-1Z-ueJ"/>
+                <constraint firstAttribute="trailing" secondItem="qgl-9C-bFn" secondAttribute="trailing" id="Wgs-Ww-umT"/>
+                <constraint firstItem="Hh4-kG-1t1" firstAttribute="bottom" secondItem="izj-5K-Gpn" secondAttribute="bottom" id="b2i-p9-9j6"/>
+                <constraint firstItem="qgl-9C-bFn" firstAttribute="top" secondItem="izj-5K-Gpn" secondAttribute="bottom" constant="20" id="cna-an-Zdl"/>
+                <constraint firstItem="izj-5K-Gpn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="55" id="qHX-mb-zU5"/>
+                <constraint firstItem="Hh4-kG-1t1" firstAttribute="trailing" secondItem="izj-5K-Gpn" secondAttribute="trailing" id="rWw-mU-ggZ"/>
+                <constraint firstItem="4SG-QG-pKm" firstAttribute="top" secondItem="qgl-9C-bFn" secondAttribute="bottom" id="wFl-Ct-vRI"/>
+            </constraints>
+            <point key="canvasLocation" x="25" y="-689"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="DzLogo" width="375" height="124"/>
+        <image name="OnlineIcon" width="3312" height="3312"/>
+        <image name="PhotoBtn" width="250" height="250"/>
+    </resources>
+</document>

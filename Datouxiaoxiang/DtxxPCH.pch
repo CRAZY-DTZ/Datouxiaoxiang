@@ -1,0 +1,21 @@
+//
+//  DtxxPCH.pch
+//  Datouxiaoxiang
+//
+//  Created by wuhaibin on 16/10/9.
+//  Copyright © 2016年 wuhaibin. All rights reserved.
+//
+
+#ifndef DtxxPCH_pch
+#define DtxxPCH_pch
+
+#import <UIKit/UIKit.h>
+#import "ImageSetting.h"
+#import "FrameSetting.h"
+#import "ColorSetting.h"
+#import "NetworkManager.h"
+#import <MBProgressHUD.h>
+#import <SDImageCache.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+
+#endif /* DtxxPCH_pch */

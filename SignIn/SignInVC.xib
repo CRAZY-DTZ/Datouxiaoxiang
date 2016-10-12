@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignInVC">
+            <connections>
+                <outlet property="_plBtn" destination="o81-8S-ej8" id="khn-YO-CuZ"/>
+                <outlet property="_wechatBtn" destination="DRn-MS-02Z" id="H5R-ce-dLp"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="umw-TV-0wd">
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="umw-TV-0wd" secondAttribute="height" multiplier="1:1" id="Izn-K2-fjC"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DzLogo" translatesAutoresizingMaskIntoConstraints="NO" id="4Fh-Vq-nQI">
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="4Fh-Vq-nQI" secondAttribute="height" multiplier="3750:1235" id="d2f-dJ-hS2"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o91-t4-9Uw">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DRn-MS-02Z">
+                            <state key="normal" backgroundImage="WechatLogin"/>
+                            <connections>
+                                <action selector="wechatLoginAction:" destination="-1" eventType="touchUpInside" id="PAf-3A-JT5"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o81-8S-ej8">
+                            <state key="normal" backgroundImage="PhoneLogin"/>
+                            <connections>
+                                <action selector="phoneLoginAction:" destination="-1" eventType="touchUpInside" id="gj1-OR-7GK"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vvy-vv-BLr">
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1" id="blW-RS-6h7"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="o81-8S-ej8" firstAttribute="centerY" secondItem="o91-t4-9Uw" secondAttribute="centerY" id="6Ri-c7-af9"/>
+                        <constraint firstItem="Vvy-vv-BLr" firstAttribute="leading" secondItem="o81-8S-ej8" secondAttribute="trailing" constant="35" id="KTg-mo-fgk"/>
+                        <constraint firstItem="DRn-MS-02Z" firstAttribute="centerY" secondItem="o91-t4-9Uw" secondAttribute="centerY" id="O0S-6K-qEj"/>
+                        <constraint firstAttribute="bottom" secondItem="Vvy-vv-BLr" secondAttribute="bottom" id="P5f-RY-NFa"/>
+                        <constraint firstItem="DRn-MS-02Z" firstAttribute="leading" secondItem="Vvy-vv-BLr" secondAttribute="trailing" constant="35" id="QgB-c0-kvE"/>
+                        <constraint firstItem="Vvy-vv-BLr" firstAttribute="top" secondItem="o91-t4-9Uw" secondAttribute="top" id="gm3-Oa-zYX"/>
+                        <constraint firstItem="Vvy-vv-BLr" firstAttribute="centerX" secondItem="o91-t4-9Uw" secondAttribute="centerX" id="pfP-cz-XM3"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="umw-TV-0wd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0Tv-cG-OQ8"/>
+                <constraint firstAttribute="bottom" secondItem="o91-t4-9Uw" secondAttribute="bottom" id="3hS-9S-q2a"/>
+                <constraint firstItem="o91-t4-9Uw" firstAttribute="top" secondItem="4Fh-Vq-nQI" secondAttribute="bottom" id="7yr-zh-QzJ"/>
+                <constraint firstItem="umw-TV-0wd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="55" id="Adz-gQ-ir4"/>
+                <constraint firstAttribute="trailing" secondItem="umw-TV-0wd" secondAttribute="trailing" constant="62" id="UlB-pi-Z1x"/>
+                <constraint firstAttribute="trailing" secondItem="4Fh-Vq-nQI" secondAttribute="trailing" id="a7v-Es-gF6"/>
+                <constraint firstAttribute="trailing" secondItem="o91-t4-9Uw" secondAttribute="trailing" id="aPj-Fh-Zc6"/>
+                <constraint firstItem="4Fh-Vq-nQI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="buW-pU-f38"/>
+                <constraint firstItem="umw-TV-0wd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="62" id="kuS-St-s21"/>
+                <constraint firstItem="4Fh-Vq-nQI" firstAttribute="top" secondItem="umw-TV-0wd" secondAttribute="bottom" constant="55" id="qos-PF-Iyq"/>
+                <constraint firstItem="o91-t4-9Uw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uHY-ak-YnD"/>
+            </constraints>
+            <point key="canvasLocation" x="-478" y="-16"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="DzLogo" width="375" height="124"/>
+        <image name="Logo" width="250" height="250"/>
+        <image name="PhoneLogin" width="90" height="40"/>
+        <image name="WechatLogin" width="90" height="40"/>
+    </resources>
+</document>

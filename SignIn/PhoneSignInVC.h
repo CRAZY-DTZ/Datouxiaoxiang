@@ -1,0 +1,13 @@
+//
+//  PhoneSignInVC.h
+//  Datouxiaoxiang
+//
+//  Created by wuhaibin on 16/9/30.
+//  Copyright © 2016年 wuhaibin. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface PhoneSignInVC : UIViewController
+
+@end
